@@ -33,8 +33,9 @@ public final class PanoramaFallbackRenderer implements PanoramaRenderer {
 		RenderSystem.clearColor(r, g, b, alpha);
 		RenderSystem.clear(GlConst.GL_COLOR_BUFFER_BIT | GlConst.GL_DEPTH_BUFFER_BIT, MinecraftClient.IS_SYSTEM_MAC);
 
-		font.draw(IDENTITY, TEXT_TOP, 4, 4, foreground);
-		font.draw(IDENTITY, TEXT_BOTTOM, 4, 6 + font.fontHeight, foreground);
+		// Looks kinda complicated to do now... (or I'm just dumb)
+//		font.draw(IDENTITY, TEXT_TOP, 4, 4, foreground);
+//		font.draw(IDENTITY, TEXT_BOTTOM, 4, 6 + font.fontHeight, foreground);
 	}
 
 	@Override
